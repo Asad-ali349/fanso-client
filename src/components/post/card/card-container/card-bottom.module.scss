@@ -1,0 +1,18 @@
+.feed-bottom {
+  .feed-actions {
+    display: flex;
+    width: 100%;
+    padding: 5px 0;
+
+    .action-item {
+      width: 100%;
+      align-items: center;
+      display: flex;
+
+      &:last-child {
+        justify-content: flex-end;
+        width: 25%;
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+.feedContainer {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.reelsSection {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-padding-top: 0;
+}
+
+.reel {
+  height: 92vh;
+  scroll-snap-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  @media (max-width: 600px) {
+    height: 100vh;
+  }
+}
+
+.video {
+  width: 500px;
+  height: 100%;
+  object-fit: fill;
+  background-color: #282828;
+  border-radius: 20px;
+  @media (max-width: 600px) {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+
+.topAction{
+    max-width: 500px;
+    width: 500px;
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 600px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  button {
+    align-items: center;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: #272727;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 0.6;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+.overlay {
+  max-width: 500px;
+  width: 500px;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: black;
+  @media (max-width: 600px) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.videoInfo {
+  max-width: 70%;
+  padding-left: 10px;
+  color: white;
+}
+.actions{
+  position: relative;
+}
+
+.actions .actionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 10px;
+  position: absolute;
+  bottom: 18px;
+  right: 0px;
+  text-align: center;
+}
+
+.actions .actionWrapper button {
+  align-items: center;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: #272727;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+}
+.actions .actionWrapper span {
+    color: white;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.userprofile{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  button{
+    border-radius: 10px;
+    border: none;
+    padding-block: 4px;
+    padding-inline: 15px;
+    cursor: pointer;
+  }
+}
+
+.userprofile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+

@@ -1,0 +1,8 @@
+.player-skeleton {
+  height: 352px;
+  border-radius: 24px;
+
+  @media screen and (max-width: 550px) {
+    height: 188px;
+  }
+}

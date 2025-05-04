@@ -1,0 +1,12 @@
+.feed-container {
+  .feed-text {
+    margin: 10px 0;
+    font-size: 13px;
+    white-space: pre-line;
+    overflow-wrap: break-word;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+}
