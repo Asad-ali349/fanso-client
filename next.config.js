@@ -36,7 +36,8 @@ const nextConfig = {
     };
   },
   experimental: {
-    scrollRestoration: true
+    scrollRestoration: true,
+    esmExternals: false
   },
   optimizeFonts: true,
   poweredByHeader: false,
